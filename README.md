@@ -43,6 +43,14 @@ No build step is required — Cloudflare serves the files as-is. `_headers` is a
 
 ## Changelog
 
+### v4.0 — "Fiesta" vibrant, media-rich redesign (July 2026)
+- Full pivot to a dramatic, exciting, vibrant look: warm cream canvas with a bold Spanish palette (garnet red #c01f2b, saffron/marigold #f4a613, terracotta) and heavy Fraunces display type. Sections alternate cream, full-bleed photo bands, and a saturated garnet color band for rhythm and energy.
+- Media-forward: a two-row auto-scrolling **photo marquee** (16 dishes), the **La Mesa** grid now uses a fixed-row masonry with a big paella hero + wide feature tiles and vibrant course tags (22 dishes, filterable), plus the ambiance gallery and full-bleed interludes. Nearly every client photo is used, several more than once.
+- Fixed the v3 mobile bug: dish tiles had a black void while lazy images loaded. Now tiles use a warm saffron→terracotta placeholder (never black), fixed row heights, and a global `figure` margin reset — verified full-bleed with no gaps and no horizontal overflow on 390px mobile.
+- Motion: hero slow-zoom, marquee, hover lifts/zooms, staggered reveals — all reduced-motion safe.
+- Preserved: all facts, contact info, hours, single H1, meta/canonical/OG/Twitter, Restaurant JSON-LD, accessibility patterns (skip link, focus-visible, semantic HTML, alt text, keyboard nav, reduced-motion), Cloudflare deploy setup, every real photo.
+- Verified in a headless browser (desktop 1440px + mobile 390px): valid HTML + JSON-LD, balanced CSS, one H1, all 31 images carry alt text, dish grid packs cleanly, filter works, no horizontal overflow, mobile call bar and clickable tel: links intact.
+
 ### v3.0 — "Mesa" refined redesign (July 2026)
 - Full visual remix toward quiet elegance: restrained deep warm-black canvas, muted saffron gold used as a fine accent (hairlines, small caps) rather than heavy gradients. Type moved to Cormorant Garamond (elegant high-contrast serif) + Inter, at lighter weights with more whitespace and a calmer rhythm.
 - New centerpiece — **La Mesa**, an immersive image-led dish gallery: a dense photo mosaic featuring 22 real dishes, names only (course kicker + dish name on hover/caption), with a course filter (Everything / Tapas / Arroces / Del Mar / A la Parrilla / Postres) that highlights matches in place. Experience over exact detail — no prices, no long descriptions.

@@ -54,24 +54,19 @@
     reveals.forEach(function (el) { io.observe(el); });
   }
 
-  /* ---- Dish gallery filter ---- */
-  var mosaic = document.getElementById("mosaic");
+  /* ---- Dish grid filter (hide + reflow) ---- */
+  var grid = document.getElementById("dish-grid");
   var filterBtns = document.querySelectorAll(".course-nav button");
-  if (mosaic && filterBtns.length) {
-    var tiles = Array.prototype.slice.call(mosaic.querySelectorAll(".tile"));
+  if (grid && filterBtns.length) {
+    var dishes = Array.prototype.slice.call(grid.querySelectorAll(".dish"));
     filterBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
         var filter = btn.getAttribute("data-filter");
         filterBtns.forEach(function (b) { b.classList.toggle("is-active", b === btn); });
-        if (filter === "all") {
-          mosaic.classList.remove("is-filtered");
-          tiles.forEach(function (t) { t.classList.add("match"); });
-        } else {
-          mosaic.classList.add("is-filtered");
-          tiles.forEach(function (t) {
-            t.classList.toggle("match", t.getAttribute("data-course") === filter);
-          });
-        }
+        dishes.forEach(function (d) {
+          var show = filter === "all" || d.getAttribute("data-course") === filter;
+          d.classList.toggle("hide", !show);
+        });
       });
     });
   }
