@@ -43,6 +43,14 @@ No build step is required — Cloudflare serves the files as-is. `_headers` is a
 
 ## Changelog
 
+### v3.0 — "Mesa" refined redesign (July 2026)
+- Full visual remix toward quiet elegance: restrained deep warm-black canvas, muted saffron gold used as a fine accent (hairlines, small caps) rather than heavy gradients. Type moved to Cormorant Garamond (elegant high-contrast serif) + Inter, at lighter weights with more whitespace and a calmer rhythm.
+- New centerpiece — **La Mesa**, an immersive image-led dish gallery: a dense photo mosaic featuring 22 real dishes, names only (course kicker + dish name on hover/caption), with a course filter (Everything / Tapas / Arroces / Del Mar / A la Parrilla / Postres) that highlights matches in place. Experience over exact detail — no prices, no long descriptions.
+- Motion dialed back and reduced-motion safe: gentle fade-up reveals, subtle image hover-zoom, sticky header blur. Removed the marquee, parallax, scroll-progress bar, and animated counters from v2.
+- New flow: cinematic hero → short story statement → La Mesa mosaic → "made by hand" interlude → family-table story → The Room (ambiance) → reserve CTA → visit/hours.
+- Preserved: all content facts, contact info, hours, address, phone, single H1, meta/canonical/OG/Twitter, Restaurant JSON-LD, accessibility patterns (skip link, focus-visible, semantic HTML, alt text, keyboard nav, reduced-motion), Cloudflare deployment setup, and every real client photo. Total HTML+CSS+JS ≈ 52 KB.
+- Verified: valid HTML + JSON-LD, balanced CSS, one H1, all 31 images carry alt text, all image refs resolve, all nav anchors resolve to section ids, clickable tel: links, mobile call bar, no horizontal overflow.
+
 ### v2.0 — Bold showcase redesign (July 2026)
 - Complete visual redesign: bolder, image-forward, "showcase" feel while staying premium. v1 files preserved in `_backup-v1/`.
 - Richer palette layered on the brand: deep warm-black backgrounds with saffron-gold gradient + Spanish garnet accents; gold-gradient headlines, eyebrows, and buttons.
