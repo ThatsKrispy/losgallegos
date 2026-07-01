@@ -29,21 +29,6 @@
     });
   }
 
-  // Menu category filter
-  var filterBtns = document.querySelectorAll(".filter-btn");
-  var dishes = document.querySelectorAll(".dish");
-  filterBtns.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var cat = btn.getAttribute("data-filter");
-      filterBtns.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
-      btn.setAttribute("aria-pressed", "true");
-      dishes.forEach(function (d) {
-        var show = cat === "all" || d.getAttribute("data-cat") === cat;
-        d.classList.toggle("is-hidden", !show);
-      });
-    });
-  });
-
   // Reveal on scroll
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
