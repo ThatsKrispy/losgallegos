@@ -43,6 +43,14 @@ No build step is required — Cloudflare serves the files as-is. `_headers` is a
 
 ## Changelog
 
+### v2.0 — Bold showcase redesign (July 2026)
+- Complete visual redesign: bolder, image-forward, "showcase" feel while staying premium. v1 files preserved in `_backup-v1/`.
+- Richer palette layered on the brand: deep warm-black backgrounds with saffron-gold gradient + Spanish garnet accents; gold-gradient headlines, eyebrows, and buttons.
+- New/upgraded sections: kinetic hero (entrance animation + slow zoom + parallax), a scrolling Spanish-dish marquee, an expanded **Our Story / history** block told from verified facts only (family-run, Galician/Spanish roots, Bird Road — no invented dates or names), a **Signature Dishes** image-card grid, larger 8-image gallery, parallax interstitial + CTA band.
+- Motion (all vanilla JS, reduced-motion safe): scroll progress bar, staggered scroll reveals, animated stat counters (4.5★, 140+ reviews), background parallax, hover zoom on gallery/cards.
+- Preserved: all content facts, contact info, hours, SEO (single H1, meta, canonical, OG/Twitter, Restaurant JSON-LD), accessibility patterns, deployment setup, and every real client photo.
+- Verified: valid HTML + JSON-LD, balanced CSS, one H1, all image refs resolve, all nav anchors resolve, clickable tel: links, no horizontal overflow rules intact. Total HTML+CSS+JS ≈ 68 KB.
+
 ### v1.0 — Full rebuild (June 2026)
 - Rebuilt from scratch as a fast static site (previous site was a client-rendered JS app).
 - Pulled and re-optimized all real client photos: 46 MB of source images → 4.4 MB of WebP, SEO-named (e.g. `los-gallegos-miami-paella-valenciana.webp`).
