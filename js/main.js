@@ -1,28 +1,23 @@
 /* =========================================================
-   Los Gallegos — v3 "Mesa"
-   Lightweight, dependency-free, reduced-motion aware.
+   Los Gallegos — v5 "Clean Modern"
+   Vanilla JS, no dependencies, reduced-motion + consent aware.
    ========================================================= */
 (function () {
   "use strict";
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---- Header: solid background after scroll ---- */
+  /* ---- Header background on scroll ---- */
   var header = document.querySelector(".site-header");
-  function onScroll() {
-    if (header) header.classList.toggle("is-scrolled", window.scrollY > 24);
-  }
+  function onScroll() { if (header) header.classList.toggle("is-scrolled", window.scrollY > 20); }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  /* ---- Mobile nav toggle ---- */
+  /* ---- Mobile nav ---- */
   var toggle = document.querySelector(".nav__toggle");
   var links = document.getElementById("nav-links");
   function closeNav() {
     document.body.classList.remove("nav-open");
-    if (toggle) {
-      toggle.setAttribute("aria-expanded", "false");
-      toggle.setAttribute("aria-label", "Open menu");
-    }
+    if (toggle) { toggle.setAttribute("aria-expanded", "false"); toggle.setAttribute("aria-label", "Open menu"); }
   }
   if (toggle && links) {
     toggle.addEventListener("click", function () {
@@ -30,12 +25,8 @@
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     });
-    links.addEventListener("click", function (e) {
-      if (e.target.closest("a")) closeNav();
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") closeNav();
-    });
+    links.addEventListener("click", function (e) { if (e.target.closest("a")) closeNav(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeNav(); });
   }
 
   /* ---- Scroll reveal ---- */
@@ -45,38 +36,77 @@
   } else {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in");
-          io.unobserve(entry.target);
-        }
+        if (entry.isIntersecting) { entry.target.classList.add("in"); io.unobserve(entry.target); }
       });
-    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    }, { threshold: 0.1, rootMargin: "0px 0px -6% 0px" });
     reveals.forEach(function (el) { io.observe(el); });
   }
 
-  /* ---- Dish grid filter (hide + reflow) ---- */
-  var grid = document.getElementById("dish-grid");
-  var filterBtns = document.querySelectorAll(".course-nav button");
+  /* ---- Menu filter ---- */
+  var grid = document.getElementById("dishes");
+  var filterBtns = document.querySelectorAll(".filter button");
   if (grid && filterBtns.length) {
     var dishes = Array.prototype.slice.call(grid.querySelectorAll(".dish"));
     filterBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var filter = btn.getAttribute("data-filter");
-        filterBtns.forEach(function (b) { b.classList.toggle("is-active", b === btn); });
+        var f = btn.getAttribute("data-filter");
+        filterBtns.forEach(function (b) {
+          var active = b === btn;
+          b.classList.toggle("is-active", active);
+          b.setAttribute("aria-pressed", active ? "true" : "false");
+        });
         dishes.forEach(function (d) {
-          var show = filter === "all" || d.getAttribute("data-course") === filter;
-          d.classList.toggle("hide", !show);
+          d.classList.toggle("hide", !(f === "all" || d.getAttribute("data-course") === f));
         });
       });
     });
   }
 
-  /* ---- Highlight today's hours row ---- */
+  /* ---- Today's hours highlight ---- */
   var today = new Date().getDay();
-  var row = document.querySelector('.hours-table tr[data-day="' + today + '"]');
+  var row = document.querySelector('.hours tr[data-day="' + today + '"]');
   if (row) row.classList.add("is-today");
 
   /* ---- Footer year ---- */
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
+
+  /* ---- Cookie consent ----
+     Essential cookies only by default. Analytics load ONLY after opt-in.
+     Choice is stored in localStorage so the banner won't nag on return. */
+  var consent = document.getElementById("consent");
+  var STORE = "lg-consent";
+  function stored() { try { return localStorage.getItem(STORE); } catch (e) { return null; } }
+  function save(v) { try { localStorage.setItem(STORE, v); } catch (e) {} }
+
+  function showConsent() {
+    if (!consent) return;
+    consent.hidden = false;
+    requestAnimationFrame(function () { consent.classList.add("show"); });
+  }
+  function hideConsent() {
+    if (!consent) return;
+    consent.classList.remove("show");
+    window.setTimeout(function () { consent.hidden = true; }, 420);
+  }
+  function loadAnalytics() {
+    /* Placeholder: no analytics currently loaded. When a provider is added,
+       inject its script here so it never runs before consent. */
+  }
+
+  if (consent) {
+    var choice = stored();
+    if (choice === "accepted") {
+      loadAnalytics();
+    } else if (choice !== "declined") {
+      showConsent();
+    }
+    consent.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-consent]");
+      if (!b) return;
+      if (b.getAttribute("data-consent") === "accept") { save("accepted"); loadAnalytics(); }
+      else { save("declined"); }
+      hideConsent();
+    });
+  }
 })();

@@ -43,6 +43,16 @@ No build step is required — Cloudflare serves the files as-is. `_headers` is a
 
 ## Changelog
 
+### v5.0 — "Clean Modern" ground-up rebuild (July 2026)
+- Brand-new, from-scratch iteration: a clean, modern, editorial layout — warm off-white canvas, deep Spanish wine-red (#9e2b25) accent with sparing gold, Georgia serif display + system sans body. Light, airy, lots of whitespace; mobile-first.
+- **Zero third-party requests:** dropped Google Fonts in favor of a self-contained system/serif font stack. Faster, privacy-friendly, and it means no external provider is contacted before consent.
+- **Cookie consent:** accessible consent banner (role="dialog", keyboard-operable) that stores the choice in localStorage and only loads optional analytics after opt-in — non-essential scripts never run before consent. New Cookie Policy section in `privacy.html`.
+- **ADA / accessibility:** semantic landmarks, one H1 + ordered headings, skip link, visible focus outlines, `aria-*` on nav/filter/consent, descriptive alt text, AA-minded contrast, reduced-motion support, and a dedicated `accessibility.html` statement. (Built-in accessibility rather than an overlay widget, per best practice.)
+- **SEO image rename:** all 31 photos + the OG image renamed keyword-first with location, e.g. `paella-valenciana-los-gallegos-miami-florida.webp`, `los-gallegos-storefront-bird-road-miami-florida.webp`. "Miami, FL / Florida" woven naturally through titles, meta, headings, and alt text.
+- Media used throughout: full-bleed hero, info strip, about split, 22-dish filterable menu grid, full-bleed feature banner, ambiance gallery, and CTA.
+- New pages/links: `accessibility.html`; footer now links Privacy, Cookie Policy, Terms, and Accessibility. Updated `404.html`, `site.webmanifest` (new colors), and `sitemap.xml`.
+- Verified in a headless browser (desktop + mobile): every renamed image reference resolves, valid HTML + JSON-LD, one H1, all images carry alt text, filter + consent work, no horizontal overflow.
+
 ### v4.0 — "Fiesta" vibrant, media-rich redesign (July 2026)
 - Full pivot to a dramatic, exciting, vibrant look: warm cream canvas with a bold Spanish palette (garnet red #c01f2b, saffron/marigold #f4a613, terracotta) and heavy Fraunces display type. Sections alternate cream, full-bleed photo bands, and a saturated garnet color band for rhythm and energy.
 - Media-forward: a two-row auto-scrolling **photo marquee** (16 dishes), the **La Mesa** grid now uses a fixed-row masonry with a big paella hero + wide feature tiles and vibrant course tags (22 dishes, filterable), plus the ambiance gallery and full-bleed interludes. Nearly every client photo is used, several more than once.
