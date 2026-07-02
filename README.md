@@ -43,6 +43,14 @@ No build step is required — Cloudflare serves the files as-is. `_headers` is a
 
 ## Changelog
 
+### v7.0 — "La Mesa Dorada" elegant fine-dining redesign (July 2026)
+- Full pivot to a dark, elegant, photo-led fine-dining direction: warm near-black canvas (#100e0c), champagne-gold hairline accents, generous whitespace, and a calm, premium rhythm. Removed the v6 playful concept (roulette, marquee, greca ribbons, script accents).
+- Typography: **Cormorant Garamond** (400/400-italic/500/600) for display + statements, letter-spaced small-caps system sans for UI. The four faces are subsetted (~13 KB each) and inlined as data URIs in the stylesheet — **zero third-party requests, zero extra font requests**.
+- New flow: full-screen cinematic hero (dining room, slow settle-zoom, scroll hint) → serif philosophy statement → **Los Platos** editorial signature-dish features (I/II/III, alternating photo/text) → **La Carta** 22-dish filterable grid (minimal cards: photo, gold course tag, serif name, hairline) → wine-toast interlude quote → **Nuestra Casa** family story → **El Comedor** gallery → serif phone-number reserve band → visit/hours cards → footer.
+- Preserved all foundations: facts/contact/hours unchanged, one H1, meta/canonical/OG/Twitter + Restaurant JSON-LD, SEO image names, skip link + focus states + semantic landmarks + accessibility.html, cookie consent (essential-only until opt-in), mobile call bar, reduced-motion support.
+- Updated 404/privacy/accessibility pages, manifest + theme-color to the new palette; cache version bumped to `?v=7`.
+- Verified in a headless browser (desktop 1440 + mobile 390): valid HTML + JSON-LD, one H1, every image/font reference resolves, filter + consent + mobile nav work, no horizontal overflow, no console errors.
+
 ### v6.0 — "¡Fiesta!" playful concept + Dish Roulette (July 2026)
 - Fresh, fun creative direction: a Spanish-azulejo palette (cobalt blue, terracotta, saffron on cream), bold display type with Georgia-italic Spanish accents (¡Vamos a comer!), a "sol" glow, a cobalt marquee, and hand-built greca (zig-zag tile) ribbons — all in pure CSS.
 - **New interactive centerpiece — Dish Roulette** ("¿Qué comemos hoy?"): a spinning "paella pan" that reels through featured dishes and lands on a suggestion with a call-to-order prompt. Fully accessible — keyboard-operable button, `aria-live` announcement, and reduced-motion users get an instant pick instead of the reel (no flashing). Dish name/tag render in a caption below the pan so long names never clip.

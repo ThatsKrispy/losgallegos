@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Los Gallegos | Spanish Restaurant in Miami, FL — Tapas, Paella &amp; Seafood</title>
+  <title>Los Gallegos | Spanish Fine Dining in Miami, FL — Tapas, Paella &amp; Seafood</title>
   <meta name="description" content="Los Gallegos is a family-run Spanish restaurant on Bird Road in Miami, Florida. Hand-made tapas, slow-cooked paella, fresh seafood, and Spanish wine. Call (305) 661-3040 to reserve." />
-  <meta name="theme-color" content="#1466b0" />
+  <meta name="theme-color" content="#100e0c" />
   <link rel="canonical" href="https://losgallegosmiami.com/" />
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="restaurant" />
-  <meta property="og:title" content="Los Gallegos | Spanish Restaurant in Miami, FL" />
+  <meta property="og:title" content="Los Gallegos | Spanish Fine Dining in Miami, FL" />
   <meta property="og:description" content="Hand-made tapas, slow-cooked paella, and fresh seafood — a family-run Spanish table on Bird Road, Miami, Florida." />
   <meta property="og:url" content="https://losgallegosmiami.com/" />
   <meta property="og:image" content="https://losgallegosmiami.com/assets/img/los-gallegos-spanish-restaurant-miami-florida.jpg" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Los Gallegos | Spanish Restaurant in Miami, FL" />
+  <meta name="twitter:title" content="Los Gallegos | Spanish Fine Dining in Miami, FL" />
   <meta name="twitter:description" content="Tapas, paella, and fresh seafood in the heart of Miami, Florida. Family-run on Bird Road." />
   <meta name="twitter:image" content="https://losgallegosmiami.com/assets/img/los-gallegos-spanish-restaurant-miami-florida.jpg" />
 
@@ -25,9 +25,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png" />
   <link rel="apple-touch-icon" href="/assets/img/favicon-180.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="preload" as="image" href="/assets/img/spanish-restaurant-los-gallegos-miami-florida.webp" />
 
-  <link rel="stylesheet" href="/css/styles.css?v=6" />
+  <!-- Fonts are subsetted and inlined in the stylesheet (no extra requests) -->
+  <link rel="preload" as="image" href="/assets/img/spanish-food-spread-los-gallegos-miami-florida.webp" />
+
+  <link rel="stylesheet" href="/css/font-400.css?v=7" />
+  <link rel="stylesheet" href="/css/font-400i.css?v=7" />
+  <link rel="stylesheet" href="/css/font-500.css?v=7" />
+  <link rel="stylesheet" href="/css/font-600.css?v=7" />
+  <link rel="stylesheet" href="/css/styles.css?v=7" />
 
   <!-- Structured data: Restaurant -->
   <script type="application/ld+json">
@@ -61,35 +67,30 @@
   </script>
 </head>
 <body>
-  <a href="#main" class="skip btn btn--tomato">Skip to content</a>
+  <a href="#main" class="skip">Skip to content</a>
 
   <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav" aria-label="Primary">
-        <a class="brand" href="#top" aria-label="Los Gallegos — home">
-          <span class="brand__mark">Los <em>Gallegos</em></span>
-          <span class="brand__sub">Spanish Cuisine · Miami, FL</span>
-        </a>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="#roulette">Spin</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#story">About</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#visit">Visit</a></li>
-        </ul>
-        <div class="nav__actions">
-          <a class="nav__call" href="tel:+13056613040" aria-label="Call Los Gallegos at (305) 661-3040">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            (305) 661-3040
-          </a>
-          <a class="btn btn--tomato" href="tel:+13056613040">Reserve</a>
-          <button class="nav__toggle" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </nav>
-    </div>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container-wide" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Los Gallegos — home">
+        <span class="brand__name">Los Gallegos</span>
+        <span class="brand__sub">Cocina Española · Miami</span>
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#platos">Signature</a></li>
+        <li><a href="#menu">La Carta</a></li>
+        <li><a href="#casa">Our House</a></li>
+        <li><a href="#comedor">The Room</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li class="nav__links-cta"><a href="tel:+13056613040">Reserve · (305) 661-3040</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a class="btn btn--gold" href="tel:+13056613040">Reserve</a>
+        <button class="nav__toggle" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
   </header>
 
   <main id="main">
@@ -97,73 +98,88 @@
 
     <!-- Hero -->
     <section class="hero" aria-label="Welcome to Los Gallegos">
-      <div class="hero__media">
-        <img src="/assets/img/spanish-restaurant-los-gallegos-miami-florida.webp" alt="Interior of Los Gallegos Spanish restaurant in Miami, Florida" fetchpriority="high" />
+      <div class="hero__media" aria-hidden="true">
+        <img src="/assets/img/spanish-food-spread-los-gallegos-miami-florida.webp" alt="" fetchpriority="high" />
       </div>
-      <span class="hero__sun" aria-hidden="true"></span>
-      <div class="container hero__inner">
-        <p class="eyebrow">Spanish Kitchen · Bird Road, Miami</p>
-        <h1>Let's eat, Miami.<br /><span class="script">¡Vamos a comer!</span></h1>
-        <p class="hero__tag">Family-run on Bird Road for hand-made tapas, sizzling seafood, and paella cooked low and slow. Come hungry — leave happy.</p>
-        <div class="hero__actions">
-          <a class="btn btn--sun btn--lg" href="#roulette">Spin for a Dish</a>
-          <a class="btn btn--outline btn--lg" style="color:#fff;border-color:rgba(255,255,255,.6)" href="tel:+13056613040">Call to Reserve</a>
+      <div class="hero__inner">
+        <p class="kicker kicker--light reveal">Bird Road · Miami, Florida</p>
+        <h1 class="hero__title reveal" data-delay="1">Los Gallegos</h1>
+        <div class="rule rule--center reveal" data-delay="2" aria-hidden="true"></div>
+        <p class="hero__sub reveal" data-delay="2"><em>Traditional Spanish dining</em> — hand-made tapas, slow-cooked paella &amp; fresh seafood, served with Spanish wine.</p>
+        <div class="hero__actions reveal" data-delay="3">
+          <a class="btn btn--gold btn--lg" href="tel:+13056613040">Reserve a Table</a>
+          <a class="btn btn--ghost btn--lg" href="#menu">View La Carta</a>
         </div>
-        <div class="hero__meta">
-          <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 7.1-1.01L12 2z"/></svg> 4.5 stars · 140+ reviews</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 6549 Bird Rd, Miami, FL</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Open daily · lunch &amp; dinner</span>
-        </div>
+      </div>
+      <a class="hero__scroll" href="#intro" aria-label="Scroll to introduction"><span></span></a>
+    </section>
+
+    <!-- Intro statement -->
+    <section class="section intro" id="intro" aria-label="Our philosophy">
+      <div class="container-narrow">
+        <p class="kicker reveal">Hecho con Cariño</p>
+        <p class="intro__statement reveal" data-delay="1">Good olive oil, saffron, the day's seafood — <em>and time.</em> Every plate is cooked to order and carried to the table warm, the old-country way.</p>
+        <div class="rule rule--center reveal" data-delay="2" aria-hidden="true"></div>
       </div>
     </section>
 
-    <div class="greca" aria-hidden="true"></div>
-
-    <!-- Marquee -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>Tapas</span><span>Paella</span><span>Mariscos</span><span>Gambas al Ajillo</span><span>Pulpo</span><span>Vino Español</span><span>Croquetas</span><span>¡Salud!</span>
-        <span>Tapas</span><span>Paella</span><span>Mariscos</span><span>Gambas al Ajillo</span><span>Pulpo</span><span>Vino Español</span><span>Croquetas</span><span>¡Salud!</span>
-      </div>
-    </div>
-
-    <!-- Dish Roulette (interactive) -->
-    <section class="section roulette" id="roulette" aria-label="Dish roulette">
+    <!-- Signature dishes -->
+    <section class="section platos" id="platos" aria-label="Signature dishes">
       <div class="container">
-        <div class="roulette__wrap">
-          <div class="roulette__copy reveal">
-            <p class="eyebrow eyebrow--tomato">Can't decide?</p>
-            <h2>¿Qué comemos <span class="script">hoy?</span></h2>
-            <p>Let the pan pick for you. Give it a spin, land on tonight's craving, then call and we'll have it ready. (Warning: highly appetizing.)</p>
-            <div class="roulette__controls">
-              <button type="button" class="btn btn--tomato btn--xl" id="spinBtn">Spin the pan</button>
-              <a class="btn btn--outline btn--lg" href="tel:+13056613040">Call to order</a>
-            </div>
-            <p class="roulette__hint" id="spinHint">Tap “Spin the pan” and we'll suggest a dish.</p>
+        <header class="section-head reveal">
+          <p class="kicker">Los Platos</p>
+          <h2>Signature dishes</h2>
+        </header>
+
+        <article class="plato reveal">
+          <figure class="plato__media">
+            <img src="/assets/img/paella-valenciana-los-gallegos-miami-florida.webp" alt="Paella Valenciana with saffron rice, chicken and seafood at Los Gallegos in Miami, Florida" loading="lazy" decoding="async" />
+          </figure>
+          <div class="plato__body">
+            <span class="plato__num" aria-hidden="true">I</span>
+            <p class="kicker">Paellas &amp; Rice</p>
+            <h3>Paella Valenciana</h3>
+            <p>Saffron rice cooked low and slow until it whispers, layered with chicken and the day's seafood. Built for the table — and worth the wait.</p>
+            <a class="text-link" href="tel:+13056613040">Reserve for paella →</a>
           </div>
-          <div class="roulette__stage reveal" data-delay="1">
-            <div class="pan" id="pan">
-              <div class="pan__img"><img id="panPhoto" src="/assets/img/paella-valenciana-los-gallegos-miami-florida.webp" alt="A featured Spanish dish at Los Gallegos Miami, Florida" loading="lazy" decoding="async" /></div>
-              <span class="pan__handle" aria-hidden="true"></span>
-            </div>
-            <div class="pan__caption">
-              <span class="pan__tag" id="panTag">Paellas &amp; Rice</span>
-              <span class="pan__name" id="panName">Paella Valenciana</span>
-            </div>
-            <p class="sr-live" id="panLive" aria-live="polite"></p>
+        </article>
+
+        <article class="plato plato--flip reveal">
+          <figure class="plato__media">
+            <img src="/assets/img/pulpo-a-la-gallega-octopus-los-gallegos-miami-florida.webp" alt="Pulpo a la Gallega — Galician octopus with paprika and olive oil at Los Gallegos in Miami, Florida" loading="lazy" decoding="async" />
+          </figure>
+          <div class="plato__body">
+            <span class="plato__num" aria-hidden="true">II</span>
+            <p class="kicker">From Galicia</p>
+            <h3>Pulpo a la Gallega</h3>
+            <p>Tender octopus in the Galician manner — olive oil, sweet paprika, coarse salt. The dish that carries our name and our roots.</p>
+            <a class="text-link" href="#menu">Explore la carta →</a>
           </div>
-        </div>
+        </article>
+
+        <article class="plato reveal">
+          <figure class="plato__media">
+            <img src="/assets/img/chuletas-de-cordero-lamb-chops-los-gallegos-miami-florida.webp" alt="Chuletas de cordero — grilled lamb chops at Los Gallegos in Miami, Florida" loading="lazy" decoding="async" />
+          </figure>
+          <div class="plato__body">
+            <span class="plato__num" aria-hidden="true">III</span>
+            <p class="kicker">From the Grill</p>
+            <h3>Chuletas de Cordero</h3>
+            <p>Lamb chops kissed by the fire and finished simply — the way the grill intended. Pour a Spanish red and take your time.</p>
+            <a class="text-link" href="#visit">Plan your visit →</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- Menu / dishes -->
-    <section class="section menu" id="menu" aria-label="Menu highlights">
+    <!-- Menu / La Carta -->
+    <section class="section menu" id="menu" aria-label="La Carta — menu highlights">
       <div class="container">
-        <div class="head center reveal">
-          <p class="eyebrow eyebrow--sun">The Menu</p>
-          <h2>The whole <span class="script">spread</span></h2>
-          <p class="lead">Tapas to share, paellas built for the table, fresh seafood, and fire-grilled meats. Filter by course to explore.</p>
-        </div>
+        <header class="section-head reveal">
+          <p class="kicker">La Carta</p>
+          <h2>Tapas, paellas, mariscos &amp; more</h2>
+          <p class="section-head__lead">A taste of the table — filter by course to wander the menu.</p>
+        </header>
 
         <div class="filter reveal" role="group" aria-label="Filter dishes by course">
           <button type="button" class="is-active" data-filter="all">Everything</button>
@@ -265,40 +281,36 @@
           </figure>
         </div>
 
-        <p class="menu__note reveal"><strong>This is a taste, not the whole menu.</strong> Daily specials and prices change with the season and the market — call ahead and we'll tell you what's cooking today.</p>
+        <p class="menu__note reveal">A taste, not the whole menu — daily specials and prices change with the season and the market. <a href="tel:+13056613040">Call ahead</a> and we'll tell you what's cooking today.</p>
       </div>
     </section>
 
-    <div class="greca" aria-hidden="true"></div>
-
-    <!-- Feature banner -->
-    <section class="section feature" aria-label="Made by hand">
-      <div class="feature__bg">
-        <img src="/assets/img/spanish-food-spread-los-gallegos-miami-florida.webp" alt="A spread of Spanish dishes at Los Gallegos Miami, Florida" loading="lazy" decoding="async" />
+    <!-- Interlude -->
+    <section class="interlude" aria-label="A toast">
+      <div class="interlude__media" aria-hidden="true">
+        <img src="/assets/img/spanish-wine-toast-los-gallegos-miami-florida.webp" alt="" loading="lazy" decoding="async" />
       </div>
-      <div class="container">
-        <p class="eyebrow eyebrow--center reveal" style="justify-content:center">Hecho con Cariño</p>
-        <h2 class="reveal" data-delay="1">Honest cooking, no shortcuts</h2>
-        <p class="reveal" data-delay="1">No heat lamps, nothing rushed — just fresh Spanish food, plated to order and served warm, the old-country way.</p>
+      <div class="interlude__inner container-narrow">
+        <p class="kicker kicker--light reveal">¡Salud!</p>
+        <p class="interlude__quote reveal" data-delay="1">There is always a glass of Spanish wine waiting — and regulars are treated like family.</p>
       </div>
     </section>
 
     <!-- Story -->
-    <section class="section story" id="story" aria-label="About Los Gallegos">
+    <section class="section casa" id="casa" aria-label="About Los Gallegos">
       <div class="container">
-        <div class="story__grid">
-          <div class="story__media reveal">
-            <img src="/assets/img/spanish-restaurant-dining-room-los-gallegos-miami-florida.webp" alt="The warm dining room at Los Gallegos Spanish restaurant in Miami, Florida" loading="lazy" decoding="async" />
-            <span class="pop">¡Salud!</span>
-          </div>
-          <div class="story__body reveal" data-delay="1">
-            <p class="eyebrow eyebrow--tomato">A Family Table</p>
-            <h2>Pull up a chair, <span class="script">stay a while</span></h2>
-            <p>Los Gallegos is a true mom-and-pop place on Bird Road in Miami. The name carries the roots of Galicia and the wider Spanish table — a tradition built on good olive oil, fresh seafood, saffron rice, and time.</p>
-            <p>Every plate is cooked to order, from the croquetas to the paella. The food comes out hot, there's always a glass of Spanish wine waiting, and regulars are treated like family.</p>
-            <div class="hero__actions" style="margin-top:24px">
-              <a class="btn btn--azul" href="#menu">See the Menu</a>
-              <a class="btn btn--outline" href="#visit">Plan a Visit</a>
+        <div class="casa__grid">
+          <figure class="casa__media reveal">
+            <img src="/assets/img/los-gallegos-storefront-bird-road-miami-florida.webp" alt="Storefront of Los Gallegos Restaurant on Bird Road in Miami, Florida" loading="lazy" decoding="async" />
+          </figure>
+          <div class="casa__body reveal" data-delay="1">
+            <p class="kicker">Nuestra Casa</p>
+            <h2>A family table on Bird Road</h2>
+            <p>Los Gallegos is a true family-run house in the heart of Miami. The name carries the roots of Galicia and the wider Spanish table — a tradition built on good olive oil, fresh seafood, saffron rice, and patience.</p>
+            <p>Every plate is cooked to order, from the croquetas to the paella. Nothing sits under a heat lamp; nothing is rushed. Come for a tapas lunch, stay for a long paella dinner.</p>
+            <div class="casa__actions">
+              <a class="btn btn--gold" href="tel:+13056613040">Reserve a Table</a>
+              <a class="btn btn--ghost" href="#visit">Plan a Visit</a>
             </div>
           </div>
         </div>
@@ -306,33 +318,33 @@
     </section>
 
     <!-- Gallery -->
-    <section class="section" id="gallery" aria-label="Photo gallery">
+    <section class="section comedor" id="comedor" aria-label="The dining room">
       <div class="container">
-        <div class="head center reveal">
-          <p class="eyebrow eyebrow--sun">The Room</p>
-          <h2>Come <span class="script">hang out</span></h2>
-          <p class="lead">A warm, buzzing neighborhood room worth lingering in — over one more plate and one more glass.</p>
-        </div>
-        <div class="gallery-grid reveal">
-          <figure class="w2 h2"><img src="/assets/img/restaurant-bar-interior-los-gallegos-miami-florida.webp" alt="The bar inside Los Gallegos Spanish restaurant in Miami, Florida" loading="lazy" decoding="async" /></figure>
-          <figure><img src="/assets/img/spanish-wine-toast-los-gallegos-miami-florida.webp" alt="Guests toasting with Spanish wine at Los Gallegos Miami" loading="lazy" decoding="async" /></figure>
+        <header class="section-head reveal">
+          <p class="kicker">El Comedor</p>
+          <h2>A room worth lingering in</h2>
+        </header>
+        <div class="gallery reveal">
+          <figure class="g-tall"><img src="/assets/img/restaurant-bar-interior-los-gallegos-miami-florida.webp" alt="The bar inside Los Gallegos Spanish restaurant in Miami, Florida" loading="lazy" decoding="async" /></figure>
+          <figure><img src="/assets/img/spanish-restaurant-los-gallegos-miami-florida.webp" alt="Interior of Los Gallegos Spanish restaurant in Miami, Florida" loading="lazy" decoding="async" /></figure>
+          <figure><img src="/assets/img/spanish-wine-los-gallegos-miami-florida.webp" alt="Spanish wine served at Los Gallegos Miami" loading="lazy" decoding="async" /></figure>
+          <figure class="g-wide"><img src="/assets/img/spanish-restaurant-dining-room-los-gallegos-miami-florida.webp" alt="The warm dining room at Los Gallegos Spanish restaurant in Miami, Florida" loading="lazy" decoding="async" /></figure>
           <figure><img src="/assets/img/grilled-steak-los-gallegos-miami-florida.webp" alt="Grilled steak at Los Gallegos Miami" loading="lazy" decoding="async" /></figure>
           <figure><img src="/assets/img/spanish-dessert-los-gallegos-miami-florida.webp" alt="A Spanish dessert at Los Gallegos Miami" loading="lazy" decoding="async" /></figure>
-          <figure class="w2"><img src="/assets/img/los-gallegos-storefront-bird-road-miami-florida.webp" alt="Storefront of Los Gallegos Restaurant on Bird Road, Miami, Florida" loading="lazy" decoding="async" /></figure>
-          <figure><img src="/assets/img/spanish-wine-los-gallegos-miami-florida.webp" alt="Spanish wine at Los Gallegos Miami" loading="lazy" decoding="async" /></figure>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section cta" aria-label="Reserve a table">
-      <div class="container">
-        <p class="eyebrow eyebrow--center reveal" style="justify-content:center;color:#fff;background:rgba(255,255,255,.18)">Reserve Your Table</p>
-        <h2 class="reveal" data-delay="1">Hungry for Spain?</h2>
-        <p class="reveal" data-delay="1">Whether it's a tapas lunch or a long paella dinner with friends, we'd love to have you. Call ahead to reserve — walk-ins are always welcome, too.</p>
-        <div class="cta__actions reveal" data-delay="2">
-          <a class="btn btn--sun btn--lg" href="tel:+13056613040">Call (305) 661-3040</a>
-          <a class="btn btn--outline btn--lg" href="https://www.google.com/maps/dir/?api=1&amp;destination=6549+Bird+Rd+Miami+FL+33155" target="_blank" rel="noopener">Get Directions</a>
+    <!-- Reserve CTA -->
+    <section class="section reserve" aria-label="Reserve a table">
+      <div class="container-narrow">
+        <p class="kicker kicker--light reveal">Reservations</p>
+        <h2 class="reveal" data-delay="1">Join us at the table</h2>
+        <p class="reserve__lead reveal" data-delay="1">Call ahead to reserve — walk-ins are always welcome, too.</p>
+        <a class="reserve__phone reveal" data-delay="2" href="tel:+13056613040">(305) 661-3040</a>
+        <div class="reserve__actions reveal" data-delay="3">
+          <a class="btn btn--gold btn--lg" href="tel:+13056613040">Call to Reserve</a>
+          <a class="btn btn--ghost btn--lg" href="https://www.google.com/maps/dir/?api=1&amp;destination=6549+Bird+Rd+Miami+FL+33155" target="_blank" rel="noopener">Get Directions</a>
         </div>
       </div>
     </section>
@@ -340,32 +352,29 @@
     <!-- Visit -->
     <section class="section visit" id="visit" aria-label="Visit us">
       <div class="container">
-        <div class="head center reveal">
-          <p class="eyebrow eyebrow--tomato">Find Us</p>
+        <header class="section-head reveal">
+          <p class="kicker">Find Us</p>
           <h2>Visit Los Gallegos</h2>
-          <p class="lead">On Bird Road in the heart of Miami — easy to reach, with a private lot for parking.</p>
-        </div>
-        <div class="visit-grid">
-          <div class="card reveal">
-            <div class="info-block">
-              <span class="info-block__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-              <div><h3>Address</h3><p>6549 Bird Rd<br />Miami, FL 33155</p><p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=6549+Bird+Rd+Miami+FL+33155" target="_blank" rel="noopener">Get directions →</a></p></div>
-            </div>
-            <div class="info-block">
-              <span class="info-block__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-              <div><h3>Reservations &amp; Takeout</h3><p><a href="tel:+13056613040">(305) 661-3040</a></p></div>
-            </div>
-            <div class="info-block">
-              <span class="info-block__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></span>
-              <div><h3>Good to Know</h3>
-                <div class="amenities">
-                  <span>Reservations welcome</span><span>Takeout available</span><span>Beer &amp; wine</span><span>Private parking lot</span><span>Cards accepted</span>
-                </div>
-              </div>
-            </div>
+          <p class="section-head__lead">On Bird Road in the heart of Miami — with a private lot for parking.</p>
+        </header>
+        <div class="visit__grid">
+          <div class="visit__card reveal">
+            <h3>Address</h3>
+            <p>6549 Bird Rd<br />Miami, FL 33155</p>
+            <p><a class="text-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=6549+Bird+Rd+Miami+FL+33155" target="_blank" rel="noopener">Get directions →</a></p>
+            <h3>Reservations &amp; Takeout</h3>
+            <p><a class="text-link" href="tel:+13056613040">(305) 661-3040</a></p>
+            <h3>Good to Know</h3>
+            <ul class="amenities">
+              <li>Reservations welcome</li>
+              <li>Takeout available</li>
+              <li>Beer &amp; wine</li>
+              <li>Private parking lot</li>
+              <li>Cards accepted</li>
+            </ul>
           </div>
-          <div class="card reveal" data-delay="1">
-            <h3 class="card__title">Hours</h3>
+          <div class="visit__card reveal" data-delay="1">
+            <h3>Hours</h3>
             <table class="hours">
               <caption class="skip">Opening hours by day of the week</caption>
               <tbody>
@@ -378,11 +387,7 @@
                 <tr data-day="0"><th scope="row">Sunday</th><td>12:00 pm – 10:00 pm</td></tr>
               </tbody>
             </table>
-            <div class="visit__cta">
-              <a class="btn btn--tomato" href="tel:+13056613040">Call to Reserve</a>
-              <a class="btn btn--outline" href="#menu">See the Menu</a>
-            </div>
-            <p style="font-size:.82rem;color:var(--ink-3);margin-top:14px">Holiday hours may vary. Please call ahead to confirm.</p>
+            <p class="visit__note">Holiday hours may vary — please call ahead to confirm.</p>
           </div>
         </div>
       </div>
@@ -393,9 +398,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-        <div>
-          <span class="brand__mark">Los <em>Gallegos</em></span>
-          <p class="footer__about">Traditional Spanish cuisine in the heart of Miami, Florida. Family-run, made from scratch, and always served with a warm welcome.</p>
+        <div class="footer__brand">
+          <span class="brand__name">Los Gallegos</span>
+          <p>Traditional Spanish cuisine in the heart of Miami, Florida. Family-run, made from scratch, and always served with a warm welcome.</p>
           <div class="footer__social">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Los Gallegos on Facebook">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
@@ -408,10 +413,10 @@
         <div>
           <h4>Explore</h4>
           <ul>
-            <li><a href="#roulette">Dish Roulette</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#story">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#platos">Signature Dishes</a></li>
+            <li><a href="#menu">La Carta</a></li>
+            <li><a href="#casa">Our House</a></li>
+            <li><a href="#comedor">The Room</a></li>
             <li><a href="#visit">Visit &amp; Hours</a></li>
           </ul>
         </div>
@@ -439,8 +444,8 @@
 
   <!-- Mobile call bar -->
   <div class="callbar">
-    <a class="btn btn--tomato" href="tel:+13056613040">Call</a>
-    <a class="btn btn--sun" href="https://www.google.com/maps/dir/?api=1&amp;destination=6549+Bird+Rd+Miami+FL+33155" target="_blank" rel="noopener">Directions</a>
+    <a class="btn btn--gold" href="tel:+13056613040">Call to Reserve</a>
+    <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=6549+Bird+Rd+Miami+FL+33155" target="_blank" rel="noopener">Directions</a>
   </div>
 
   <!-- Cookie consent -->
@@ -448,11 +453,11 @@
     <h2 id="consent-title">Cookies &amp; privacy</h2>
     <p>We use only essential cookies to run this site. With your OK, we may add anonymous analytics to help us improve. See our <a href="/privacy.html#cookies">Cookie Policy</a>.</p>
     <div class="consent__actions">
-      <button type="button" class="btn btn--tomato" data-consent="accept">Accept</button>
-      <button type="button" class="btn btn--outline" data-consent="decline">Decline</button>
+      <button type="button" class="btn btn--gold" data-consent="accept">Accept</button>
+      <button type="button" class="btn btn--ghost" data-consent="decline">Decline</button>
     </div>
   </aside>
 
-  <script src="/js/main.js?v=6" defer></script>
+  <script src="/js/main.js?v=7" defer></script>
 </body>
 </html>
