@@ -43,6 +43,11 @@ No build step is required — Cloudflare serves the files as-is. `_headers` is a
 
 ## Changelog
 
+### v7.1 — Self-hosted ADA accessibility widget (July 2026)
+- New `js/a11y.js` (single file, no third parties, no external requests): a floating accessibility button (lower-left) opening a keyboard-operable dialog with **Text size (3 steps), High contrast, Underline links, Readable font, Pause animations, Strong focus outlines, and Reset**. Preferences persist in localStorage (device-only) and apply on every page.
+- Widget accessibility: 44px+ targets, `aria-expanded`/`aria-pressed`/`role="dialog"`, Escape closes and returns focus, click-outside closes, AA-contrast styling; sits above the mobile call bar via safe-area offsets. High-contrast mode remaps the site palette to pure black/white/bright gold and deepens photo overlays.
+- The widget supplements — never replaces — the built-in semantic/ADA foundations (per the accessibility statement). `accessibility.html` updated to document it.
+
 ### v7.0 — "La Mesa Dorada" elegant fine-dining redesign (July 2026)
 - Full pivot to a dark, elegant, photo-led fine-dining direction: warm near-black canvas (#100e0c), champagne-gold hairline accents, generous whitespace, and a calm, premium rhythm. Removed the v6 playful concept (roulette, marquee, greca ribbons, script accents).
 - Typography: **Cormorant Garamond** (400/400-italic/500/600) for display + statements, letter-spaced small-caps system sans for UI. The four faces are subsetted (~13 KB each) and inlined as data URIs in the stylesheet — **zero third-party requests, zero extra font requests**.
