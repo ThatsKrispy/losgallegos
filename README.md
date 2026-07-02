@@ -43,6 +43,14 @@ No build step is required — Cloudflare serves the files as-is. `_headers` is a
 
 ## Changelog
 
+### v6.0 — "¡Fiesta!" playful concept + Dish Roulette (July 2026)
+- Fresh, fun creative direction: a Spanish-azulejo palette (cobalt blue, terracotta, saffron on cream), bold display type with Georgia-italic Spanish accents (¡Vamos a comer!), a "sol" glow, a cobalt marquee, and hand-built greca (zig-zag tile) ribbons — all in pure CSS.
+- **New interactive centerpiece — Dish Roulette** ("¿Qué comemos hoy?"): a spinning "paella pan" that reels through featured dishes and lands on a suggestion with a call-to-order prompt. Fully accessible — keyboard-operable button, `aria-live` announcement, and reduced-motion users get an instant pick instead of the reel (no flashing). Dish name/tag render in a caption below the pan so long names never clip.
+- Media throughout: kinetic hero, marquee, roulette, 22-dish filterable menu, full-bleed feature, ambiance gallery.
+- Preserved all v5 foundations: SEO image names (Miami, FL), semantic ADA markup + focus states + skip link + accessibility.html, cookie consent (essential-only until opt-in), system fonts (no third-party), and the cache-busting fix.
+- Cache version bumped to `?v=6` on css/js; manifest/theme recolored to cobalt.
+- Verified in a headless browser (desktop 1440 + mobile 390): valid HTML + JSON-LD + JS, one H1, every image reference (incl. all roulette images) resolves, filter + spin + consent work, no horizontal overflow.
+
 ### v5.0 — "Clean Modern" ground-up rebuild (July 2026)
 - Brand-new, from-scratch iteration: a clean, modern, editorial layout — warm off-white canvas, deep Spanish wine-red (#9e2b25) accent with sparing gold, Georgia serif display + system sans body. Light, airy, lots of whitespace; mobile-first.
 - **Zero third-party requests:** dropped Google Fonts in favor of a self-contained system/serif font stack. Faster, privacy-friendly, and it means no external provider is contacted before consent.
